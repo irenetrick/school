@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lovely Kitchen</title>
+<style type="text/css">
+.hover {position:relative;}
+
+.hover img {
+  position:absolute;
+  width: 100%;
+  height: 250px;
+  transition: opacity 1s ease-in-out;
+			}
+.hover img:nth-of-type(1):hover{  opacity:0; } 
+#apDiv1 {
+	position: absolute;
+	left: 0px;
+	top: 20px;
+	width: 100%;
+	height: 50px;
+	z-index: 1;
+	background-color: #EEEEEE;
+	font-family: "標楷體";
+	font-size: 2em;
+}
+#apDiv2 {
+	position: absolute;
+	left: 3px;
+	top: 79px;
+	width: 100%;
+	height: 60px;
+	z-index: 4;
+}
+</style>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv3 {
+	position: absolute;
+	left: 0%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 2;
+	font size: 1em;
+	font-family: "微軟正黑體";
+	font-size: 2em;
+	color: #000;
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 1em;
+}
+#apDiv4 {
+	position: absolute;
+	left: 0%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 3;
+}
+body {
+	background-color: #EEE;
+}
+#apDiv5 {
+	position: absolute;
+	left: 33.3%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 3;
+}
+#apDiv6 {
+	position: absolute;
+	left: 34%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 2;
+	font size: 1em;
+	font-family: "微軟正黑體";
+	font-size: 2em;
+	color: #000;
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 1em;
+}
+#apDiv7 {
+	position: absolute;
+	left: 66.6%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 2;
+	font size: 1em;
+	font-family: "微軟正黑體";
+	font-size: 2em;
+	color: #000;
+	text-align: justify;
+	vertical-align: middle;
+	padding-left: 1em;
+}
+#apDiv8 {
+	position: absolute;
+	left: 66.6%;
+	top: 164px;
+	width: 33.33%;
+	height: 250px;
+	z-index: 3;
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="apDiv1">
+  <div align="center">
+幸福廚房
+  </div>
+</div>
+<div id="apDiv2">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a href="#">嚐嚐</a>    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">手作</a>
+      <ul>
+        <li><a href="#">廚房清潔</a></li>
+        <li><a href="#">工具相關</a></li>
+      </ul>
+    </li>
+    <li><a href="#" class="MenuBarItemSubmenu">關於版主</a>
+      <ul>
+        <li><a href="#">絮絮</a></li>
+        <li><a href="#">聯繫我</a></li>
+      </ul>
+    </li>
+<li><a href="#" class="MenuBarItemSubmenu">好店推薦</a>
+      <ul>
+        <li><a href="#">食材購買</a></li>
+        <li><a href="#">餐具購買</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<div id="apDiv3">
+<pre>洋蔥炒雞肉
+洋蔥200g	去骨雞腿肉500g
+青蔥1根		水60cc
+醃料:
+醬油膏2大匙	白胡椒粉 1/8 茶匙
+糖1/4茶匙	太白粉1茶匙
+調味料:醬油1.5茶匙
+</pre>
+</div>
+<div id="apDiv4" class="hover"><img src="image/chick.jpg" /></div>
+
+<div id="apDiv6">
+<pre>鮭魚豆腐味噌湯
+鮭魚排(無刺) 1片約250g
+柴魚花 1包約5g	嫩豆腐 1 盒
+青蔥 3 支	薑 5 片
+調味：
+味噌 120 g	米酒 3 大匙
+</pre>
+</div>
+<div id="apDiv5" class="hover"><img src="image/fish.jpg" /></div>
+<div id="apDiv8" class="hover"><img src="image/meat.jpg" /></div>
+<div id="apDiv7">
+<pre>
+和風漢堡排
+豬絞肉 200 克	去皮的洋蔥（切碎）60克
+全蛋1/2個	麵包粉 4 大匙
+牛奶 3 大匙	鹽 適量
+黑胡椒 適量	醬油 3 大匙
+味霖 3 大匙	砂糖 1 大匙
+蒜泥 1瓣蒜的量	水a 3 大匙
+
+</pre>
+</div>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</body>
+</html>
